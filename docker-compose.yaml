@@ -1,0 +1,32 @@
+version: '3'
+services:
+
+  app:
+    env_file: .env
+    privileged: true
+    container_name: DockerGitHubReloader2-${GITHUB_PROJECT_REPO}
+    restart: ${RESTART}
+    build: .
+    network_mode: "host"
+#    extra_hosts:
+#      - host.docker.internal:host-gateway
+    command: >
+      sh -c '
+        docker ps &&
+        docker-compose -v &&
+        npm run start
+      '
+    volumes:
+      - ./app:/usr/app/
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${FOLDER_PATH_TO_PROJECT}:${FOLDER_PATH_TO_PROJECT}
+    environment:
+      - SCHEDULE_TIME_CHECK=${SCHEDULE_TIME_CHECK}
+      - REPOSITORY_MANAGEMENT_BASE_URL=${REPOSITORY_MANAGEMENT_BASE_URL}
+      - REPOSITORY_MANAGEMENT=${REPOSITORY_MANAGEMENT}
+      - GIT_AUTH_PERSONAL_ACCESS_TOKEN=${GIT_AUTH_PERSONAL_ACCESS_TOKEN}
+      - GIT_AUTH_USERNAME=${GIT_AUTH_USERNAME}
+      - GITHUB_PROJECT_OWNER=${GITHUB_PROJECT_OWNER}
+      - GITHUB_PROJECT_REPO=${GITHUB_PROJECT_REPO}
+      - GITHUB_BRANCH=${GITHUB_BRANCH}
+      - FOLDER_PATH_TO_PROJECT=${FOLDER_PATH_TO_PROJECT}
