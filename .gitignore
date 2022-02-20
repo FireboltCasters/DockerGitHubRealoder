@@ -6,3 +6,5 @@
 Backend/app/package-lock.json
 
 Backend/app/yarn.lock
+
+.env
