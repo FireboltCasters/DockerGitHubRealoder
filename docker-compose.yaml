@@ -4,7 +4,7 @@ services:
   app:
     env_file: .env
     privileged: true
-    container_name: DockerGitHubReloader2-${GITHUB_PROJECT_REPO}
+    container_name: DockerGitHubReloader2-${GIT_PROJECT_REPO}
     restart: ${RESTART}
     build: .
     network_mode: "host"
@@ -14,6 +14,7 @@ services:
       sh -c '
         docker ps &&
         docker-compose -v &&
+        npm install --verbose &&
         npm run start
       '
     volumes:
@@ -26,7 +27,8 @@ services:
       - REPOSITORY_MANAGEMENT=${REPOSITORY_MANAGEMENT}
       - GIT_AUTH_PERSONAL_ACCESS_TOKEN=${GIT_AUTH_PERSONAL_ACCESS_TOKEN}
       - GIT_AUTH_USERNAME=${GIT_AUTH_USERNAME}
-      - GITHUB_PROJECT_OWNER=${GITHUB_PROJECT_OWNER}
-      - GITHUB_PROJECT_REPO=${GITHUB_PROJECT_REPO}
-      - GITHUB_BRANCH=${GITHUB_BRANCH}
+      - GIT_PROJECT_OWNER=${GIT_PROJECT_OWNER}
+      - GIT_PROJECT_REPO=${GIT_PROJECT_REPO}
+      - GIT_BRANCH=${GIT_BRANCH}
       - FOLDER_PATH_TO_PROJECT=${FOLDER_PATH_TO_PROJECT}
+      - GIT_AUTH_CREDENTIAL_FIELDNAME_USER=${GIT_AUTH_CREDENTIAL_FIELDNAME_USER}
