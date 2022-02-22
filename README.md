@@ -1,4 +1,4 @@
-<h1><a href="https://github.com/FireboltCasters/Observatory"><img src="https://raw.githubusercontent.com/FireboltCasters/Observatory/main/logo.png" width="50" heigth="50" /></a><a href="https://github.com/FireboltCasters/Observatory">Observatory</a> - a docker reloader for git projects</h1>
+<h1><a href="https://github.com/FireboltCasters/Observatory"><img src="https://raw.githubusercontent.com/FireboltCasters/Observatory/main/logo.png" width="50" heigth="50" /></a><a href="https://github.com/FireboltCasters/Observatory">Observatory</a> - a docker-compose reloader for git projects</h1>
 
 ## About
 
@@ -10,6 +10,14 @@ Start --> Observe --> Reload
 - Checks a git repository for updates
 - Stops, pull ,rebuilds and restarts docker-compose
 
+
+## Installation
+
+**Observatory** uses [docker-compose](https://docs.docker.com/compose/install/) (docker-compose is required):
+
+```console
+git clone https://github.com/FireboltCasters/Observator
+```
 
 
 ### Proxy
