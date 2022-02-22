@@ -1,4 +1,4 @@
-<h1><a href="https://github.com/FireboltCasters/Observatory"><img src="https://raw.githubusercontent.com/FireboltCasters/Observatory/main/logo.png" width="50" heigth="50" /></a><a href="https://github.com/FireboltCasters/Observatory">Observatory</a></h1><h2> - a docker-compose reloader for git projects</h2>
+<h1><a href="https://github.com/FireboltCasters/Observatory"><img src="https://raw.githubusercontent.com/FireboltCasters/Observatory/main/logo.png" width="50" heigth="50" /></a><a href="https://github.com/FireboltCasters/Observatory">Observatory</a></h1><h2> A docker-compose reloader for git projects</h2>
 
 ## About
 
