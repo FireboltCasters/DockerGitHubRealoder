@@ -4,6 +4,18 @@
 
 A helper for restarting docker containers on github repo updates
 
+Start --> Observe --> Reload
+
+- Starts docker-compose
+- Checks a git repository for updates
+- Stops, pull ,rebuilds and restarts docker-compose
+
+
+
+### Proxy
+
+Missing documentation
+
 
 ## Related packages
 
