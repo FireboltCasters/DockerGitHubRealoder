@@ -19,6 +19,34 @@ Start --> Observe --> Reload
 git clone https://github.com/FireboltCasters/Observator
 ```
 
+## Setup - Quick start
+
+After the installation, you can set your variables and start using it.
+Here are the most important variables to be configured in the ```.env``` file
+
+```console
+nano .env
+```
+
+#https://github.com/node-schedule/node-schedule#cron-style-scheduling
+SCHEDULE_TIME_CHECK
+
+#Client credentials
+GIT_AUTH_USERNAME
+GIT_AUTH_PERSONAL_ACCESS_TOKEN
+
+#Repo informations
+GIT_PROJECT_OWNER
+GIT_PROJECT_REPO
+GIT_BRANCH
+
+#Full path to observing project (no relative paths)
+FOLDER_PATH_TO_PROJECT
+
+
+### GitLab
+
+Missing documentation
 
 ### Proxy
 
