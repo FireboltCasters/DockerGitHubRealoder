@@ -28,7 +28,6 @@ Here are the most important variables to be configured in the ```.env``` file
 nano .env
 ```
 
-
 ```.env
 #Client credentials https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 GIT_AUTH_USERNAME
