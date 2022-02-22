@@ -28,6 +28,8 @@ Here are the most important variables to be configured in the ```.env``` file
 nano .env
 ```
 
+
+```.env
 #https://github.com/node-schedule/node-schedule#cron-style-scheduling
 SCHEDULE_TIME_CHECK
 
@@ -42,6 +44,7 @@ GIT_BRANCH
 
 #Full path to observing project (no relative paths)
 FOLDER_PATH_TO_PROJECT
+```
 
 
 ### GitLab
