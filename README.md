@@ -1,4 +1,4 @@
-<h1><a href="https://github.com/FireboltCasters/Observatory"><img src="https://raw.githubusercontent.com/FireboltCasters/Observatory/main/logo.png" width="50" heigth="50" /></a><a href="https://github.com/FireboltCasters/Observatory">Observatory</a> - a docker-compose reloader for git projects</h1>
+<h1><a href="https://github.com/FireboltCasters/Observatory"><img src="https://raw.githubusercontent.com/FireboltCasters/Observatory/main/logo.png" width="50" heigth="50" /></a><a href="https://github.com/FireboltCasters/Observatory">Observatory</a></h1><h2> - a docker-compose reloader for git projects</h2>
 
 ## About
 
@@ -44,6 +44,14 @@ GIT_BRANCH
 
 #Full path to observing project (no relative paths)
 FOLDER_PATH_TO_PROJECT
+```
+
+## Start
+
+simply start like every other docker-compose:
+
+```console
+docker-compose up
 ```
 
 
