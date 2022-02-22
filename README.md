@@ -30,17 +30,13 @@ nano .env
 
 
 ```.env
-#https://github.com/node-schedule/node-schedule#cron-style-scheduling
-SCHEDULE_TIME_CHECK
-
-#Client credentials
+#Client credentials https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 GIT_AUTH_USERNAME
 GIT_AUTH_PERSONAL_ACCESS_TOKEN
 
 #Repo informations
 GIT_PROJECT_OWNER
 GIT_PROJECT_REPO
-GIT_BRANCH
 
 #Full path to observing project (no relative paths)
 FOLDER_PATH_TO_PROJECT
@@ -54,6 +50,9 @@ simply start like every other docker-compose:
 docker-compose up
 ```
 
+## Schedule
+#https://github.com/node-schedule/node-schedule#cron-style-scheduling
+SCHEDULE_TIME_CHECK
 
 ### GitLab
 
