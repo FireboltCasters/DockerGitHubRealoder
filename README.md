@@ -49,18 +49,9 @@ simply start like every other docker-compose:
 docker-compose up
 ```
 
-## Schedule
-#https://github.com/node-schedule/node-schedule#cron-style-scheduling
-SCHEDULE_TIME_CHECK
+## Documentation
 
-### GitLab
-
-Missing documentation
-
-### Proxy
-
-Missing documentation
-
+For a more detailed look into all of the features, including the constraint syntax, custom functions, plugins and more, please have a look into the [wiki](https://github.com/FireboltCasters/Observatory/wiki).
 
 ## Related packages
 
