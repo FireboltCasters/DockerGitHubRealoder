@@ -2,13 +2,11 @@
 
 ## About
 
-A helper for restarting docker containers on github repo updates
+A helper for restarting docker containers on github repo updates. 
 
-Start --> Observe --> Reload
+Observatory checks a given git repository for updates on a specific branch. On a new commit Observatory stops your desired docker-compose application, pulls the repository and rebuilds/restarts your docker-compose application.
 
-- Starts docker-compose
-- Checks a git repository for updates
-- Stops, pull ,rebuilds and restarts docker-compose
+><img src="https://raw.githubusercontent.com/FireboltCasters/Observatory/main/workflow.png" />
 
 
 ## Installation
