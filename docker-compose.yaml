@@ -37,3 +37,4 @@ services:
       - HTTPS_PROXY=${HTTPS_PROXY}
       - NO_PROXY=${NO_PROXY}
       - GLOBAL_AGENT_HTTP_PROXY=${HTTPS_PROXY}
+      - LOG_LEVEL=1
